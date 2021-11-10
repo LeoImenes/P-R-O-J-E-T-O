@@ -1,69 +1,104 @@
-
-body{
-    margin: 0.1%;
+* {
+    margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: radial-gradient(#6e04a0, rgb(0, 0, 0));
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: a#323232;
+    border: none;
 }
 
-.head{
+input,
+label {
+    display: block;
+    outline: none;
     width: 100%;
-    height: 100vh;
-
 }
-.cabeca{
+
+a {
+    color: #E60084;
+}
+
+body {
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#main-container {
+    margin-top: 1%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+    padding: 25px;
     display: flex;
-    color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-}
-#logo{
-    background-color: #6e04a0;
+    align-self: center;
 }
 
-.acesso{
-    border: 1px solid #000;
-    margin: 0 15% 0 15%;
-    padding: 1% 0 5% 0;
-    border-radius: 4px;
-    background-color:rgba(208, 222, 228, 0);
+form {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#acess{
-    text-decoration: none;
-    color: #000;
-}
-#acess:hover{
-    color: rgb(56, 106, 170);
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
 }
 
-.acesso > h2{
-    text-align: center;
+.half-box {
+    flex: 1 1 35%;
+    position: relative;
 }
 
-.entrar{
-    margin-top: 10%;
-    text-align: center;
+.spacing {
+    margin-right: 2.5%;
 }
 
-input{
-    width: 25.2vw;
-    height: 2.3vw;
-    border: 0.2vw solid #6e04a0;
-    border-radius: 7px;
-    
+label {
+    padding-top: 1vh;
+    font-weight: bold;
+    font-size: .8rem;
 }
 
-#button{
-    color: #fff;
-    width: 13.4vw;
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+input:focus {
+    border-color: black;
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
     cursor: pointer;
-    margin-bottom: 1%;
-    background-color: #000;
 }
 
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+}
 
-
-
-
+.error-validation {
+    color: #ff1a1a;
+    font-size: 12px;
+}
